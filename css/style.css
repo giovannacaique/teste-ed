@@ -25,32 +25,65 @@ header {
    justify-content: center; 
 }
 
-#dropdown {
+.dropdown {
    display: flex;
    width: 80%;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    padding: 10px;
    border-bottom-width: 2px;
    border-bottom-color: rgb(75, 170, 151);
    border-bottom-style: solid;
 }
 
-/*#imagemCabecalho {
-   animation-name: fig2;
-   animation-duration: 3s;  
-   animation-fill-mode: forwards;
+.dropdown {
+   float: left;
+   position: relative;
 }
-@keyframes fig2 {
-   from {width: 0%;}
-   to {width: 30%;}
-}*/
 
-nav h1 {
+.menu-button {
+   background-color: #333;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.menu-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   z-index: 1;
+}
+
+.menu-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.menu-content a:hover {
+   background-color: black;
+   color: white;
+}
+
+.dropdown:hover .menu-content {
+   display: block;
+}
+
+.escala {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h2 {
    text-decoration: none;
    color: white;
    font-size: large;
-   padding: 20px;
    font-weight: bold;
 }
 
@@ -156,7 +189,7 @@ nav h1 {
    flex-direction: column;
    width: 80%;
    text-align: justify;
-   margin-top: 10%;
+   margin-top: 5%;
 }
 
 /* Estilo para o botão "Comece Agora" */
