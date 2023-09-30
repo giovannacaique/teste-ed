@@ -8,7 +8,11 @@
     }
 
     #cards-equipe-titulo {
-        width: 80%;
+        width: 123%;
+    }
+
+    #cards-equipe-descricao {
+        width: 124%;
         background-color: red;
     }
 }
