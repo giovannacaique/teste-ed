@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media(max-width: 1024px) {
     .slogan::before{
         height: 30%;
     }
@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
     .slogan::before{
         height: 40%;
     }
@@ -31,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media(max-width: 425px) {
     h3 {
         width: 90%;
     }
